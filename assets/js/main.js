@@ -14,8 +14,8 @@ $('li.dropdown > a').on('click', function (event) {
             $("ul li.dropdown").removeClass("mt-dropdown");
         });
     });
-    $("ul li.dropdown").addClass("mt-dropdown");
-
+    // $("ul li.dropdown").addClass("mt-dropdown");
+    dropdown.classList.toggle('mt-dropdown')
 
 });
 
