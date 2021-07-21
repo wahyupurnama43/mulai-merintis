@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- START : NAVBAR -->
+    <div class="container">
+        <div class="top-header d-flex justify-content-between">
+            <div class="auth d-flex justify-content-center align-content-center align-items-center">
+                <svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.25 9.37499C11.25 9.37499 13.125 9.0625 13.125 10.5094C13.4375 13.125 11.25 12.8125 11.25 12.8125"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M9.81969 2.59031C9.81969 2.59031 11.1605 2.49583 11.3419 4.01493C11.5234 5.53403 10.1903 5.69325 10.1903 5.69325"
+                        stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M2.03089 10.9426C2.11539 9.75952 3.18963 8.89877 4.37262 8.98393C4.84447 9.0179 5.34456 9.04167 5.82015 9.04167C6.36087 9.04167 6.958 9.01094 7.51795 8.96943C8.69739 8.88201 9.75864 9.74589 9.8429 10.9256V10.9256C9.92779 12.1141 8.98649 13.125 7.79496 13.125H5.82015H4.063C2.88068 13.125 1.94665 12.1219 2.03089 10.9426V10.9426Z"
+                        stroke="white" stroke-width="1.2" />
+                    <path
+                        d="M3.75 4.6875C3.75 3.47938 4.72938 2.5 5.9375 2.5V2.5C7.14562 2.5 8.125 3.47938 8.125 4.6875V5C8.125 6.03553 7.28553 6.875 6.25 6.875V6.875H5.625V6.875C4.58947 6.875 3.75 6.03553 3.75 5V4.6875Z"
+                        stroke="white" stroke-width="1.2" />
+                </svg>
+                <span class="d-flex justify-content-center align-content-center align-items-center">
+                    <a href="">Login</a> |
+                    <a href="">Register</a> Pengajar</span>
+            </div>
+            <div class=""></div>
+            <div class="sosmed">
+                <!-- sosmed ig -->
+                <a href="">
+                    <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.16669" y="1.16666" width="11.6667" height="11.6667" rx="3.5" stroke="white"
+                            stroke-width="0.816667" />
+                        <circle cx="7.00002" cy="6.99999" r="2.33333" stroke="white" stroke-width="0.816667" />
+                        <path
+                            d="M10.3542 3.5C10.3542 3.74162 10.1583 3.9375 9.91669 3.9375C9.67506 3.9375 9.47919 3.74162 9.47919 3.5C9.47919 3.25838 9.67506 3.0625 9.91669 3.0625C10.1583 3.0625 10.3542 3.25838 10.3542 3.5Z"
+                            fill="#fff" />
+                    </svg>
+                </a>
+                <!-- sosmed fb -->
+                <a href="">
+                    <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.16667 5.425V7.11667H9.68333C9.8 7.11667 9.85833 7.23333 9.85833 7.35L9.625 8.45833C9.625 8.51667 9.50833 8.575 9.45 8.575H8.16667V12.8333H6.41667V8.63333H5.425C5.30833 8.63333 5.25 8.575 5.25 8.45833V7.35C5.25 7.23333 5.30833 7.175 5.425 7.175H6.41667V5.25C6.41667 4.25833 7.175 3.5 8.16667 3.5H9.74167C9.85833 3.5 9.91667 3.55833 9.91667 3.675V5.075C9.91667 5.19167 9.85833 5.25 9.74167 5.25H8.34167C8.225 5.25 8.16667 5.30833 8.16667 5.425Z"
+                            stroke="white" stroke-width="0.82" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path
+                            d="M8.75002 12.8333H5.25002C2.33335 12.8333 1.16669 11.6667 1.16669 8.74999V5.24999C1.16669 2.33332 2.33335 1.16666 5.25002 1.16666H8.75002C11.6667 1.16666 12.8334 2.33332 12.8334 5.24999V8.74999C12.8334 11.6667 11.6667 12.8333 8.75002 12.8333Z"
+                            stroke="white" stroke-width="0.82" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </a>
+                <!-- sosmed wa -->
+                <a href="">
+                    <svg width="20" height="20" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.8432 12.0167C5.7182 12.5417 6.7682 12.8333 7.8182 12.8333C11.0265 12.8333 13.6515 10.2083 13.6515 6.99999C13.6515 3.79166 11.0265 1.16666 7.8182 1.16666C4.60986 1.16666 1.98486 3.79166 1.98486 6.99999C1.98486 8.04999 2.27653 9.04166 2.7432 9.91666L2.24512 11.8323C2.13006 12.2749 2.53968 12.6748 2.97936 12.5492L4.8432 12.0167Z"
+                            stroke="white" stroke-width="0.82" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M10.4432 8.66163C10.4432 8.75613 10.4221 8.85325 10.3775 8.94775C10.3328 9.04225 10.2749 9.1315 10.1987 9.2155C10.0699 9.35725 9.9279 9.45963 9.76754 9.52525C9.6098 9.59088 9.43892 9.625 9.25489 9.625C8.98674 9.625 8.70019 9.562 8.39786 9.43338C8.09553 9.30475 7.7932 9.1315 7.4935 8.91363C7.19117 8.69313 6.90462 8.449 6.63121 8.17863C6.36043 7.90563 6.11594 7.6195 5.89773 7.32025C5.68216 7.021 5.50865 6.72175 5.38246 6.42513C5.25627 6.12588 5.19318 5.83975 5.19318 5.56675C5.19318 5.38825 5.22472 5.21763 5.28782 5.06013C5.35091 4.9 5.45081 4.753 5.59015 4.62175C5.7584 4.45638 5.94243 4.375 6.13697 4.375C6.21058 4.375 6.28419 4.39075 6.34991 4.42225C6.41826 4.45375 6.47873 4.501 6.52605 4.56925L7.13597 5.42763C7.18329 5.49325 7.21746 5.55363 7.24112 5.61138C7.26478 5.6665 7.27793 5.72163 7.27793 5.7715C7.27793 5.8345 7.25953 5.8975 7.22272 5.95788C7.18854 6.01825 7.13859 6.08125 7.0755 6.14425L6.8757 6.35163C6.84678 6.3805 6.83364 6.41463 6.83364 6.45663C6.83364 6.47763 6.83627 6.496 6.84152 6.517C6.84941 6.538 6.8573 6.55375 6.86256 6.5695C6.90988 6.65613 6.99137 6.769 7.10705 6.9055C7.22535 7.042 7.35154 7.18113 7.48824 7.32025C7.63021 7.45938 7.76691 7.588 7.90625 7.70613C8.04295 7.82163 8.156 7.90038 8.24538 7.94763C8.25852 7.95288 8.2743 7.96075 8.2927 7.96863C8.31373 7.9765 8.33476 7.97913 8.35842 7.97913C8.40312 7.97913 8.43729 7.96338 8.46621 7.9345L8.66601 7.73763C8.73173 7.672 8.79483 7.62213 8.85529 7.59063C8.91576 7.55388 8.97623 7.5355 9.04195 7.5355C9.0919 7.5355 9.14448 7.546 9.20232 7.56963C9.26015 7.59325 9.32062 7.62738 9.38634 7.672L10.2565 8.28888C10.3249 8.33613 10.3722 8.39125 10.4011 8.45688C10.4274 8.5225 10.4432 8.58813 10.4432 8.66163Z"
+                            stroke="white" stroke-width="0.82" stroke-miterlimit="10" />
+                    </svg>
+
+                </a>
+
+
+            </div>
+        </div>
+        <nav class="menu ">
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            <div class="items">
+                <div class="logo-img">
+                    <img src="./assets/img/logo.png" alt="" />
+                </div>
+                <div class=""></div>
+                <ul id="nav">
+                    <div class="logo-img mobile-show">
+                        <img src="./assets/img/logo.png" alt="" />
+                    </div>
+                    <li data-aos="fade-down" data-aos-delay="500">
+                        <a href="index.html" class="">Workshop </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Services
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.25 8.33334C6.25 8.33334 9.58333 11.6667 10 11.6667C10.4167 11.6667 13.75 8.33334 13.75 8.33334"
+                                    stroke="#4B4B4B" stroke-width="1.4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Content Strategy</a></li>
+                            <li><a href="#">Training</a></li>
+                        </ul>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="600">
+                        <a class="" href="#">Tentang</a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-delay="600">
+                        <a class="" href="#">Blog</a>
+                    </li>
+                    <li class=" btn btn-primary-merintis">
+                        <a href="" class=" ">Login</a>
+                    </li>
+                    <li class=" btn btn-primary-solid-merintis">
+                        <a href="" class=" ">Register</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <!-- END : NAVBAR -->
+    </div>
+
+
+    <!-- START: HEADER  -->
+    <section class="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="./assets/img/header.jpg" class="d-block w-100" alt="./assets/img/header.jpg">
+                    <div class=" text-header ">
+                        <p class="text-capitalize text-center text-white">Generasi Pintar Digital</p>
+                        <h1 class="text-center text-bold text-white ">Lengkapi dirimu dengan keahlian digital melalui
+                            program kami
+                        </h1>
+                        <span
+                            class="d-flex mt-6 box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span
+                            class="d-flex box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-item  position-relative">
+                    <img src="./assets/img/header.jpg" class="d-block w-100" alt="./assets/img/header.jpg">
+                    <div class=" text-header ">
+                        <p class="text-capitalize text-center text-white">Generasi Pintar Digital</p>
+                        <h1 class="text-center text-bold text-white ">Lengkapi dirimu dengan keahlian digital melalui
+                            program kami
+                        </h1>
+                        <span
+                            class="d-flex mt-6 box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span
+                            class="d-flex box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-item  position-relative">
+                    <img src="./assets/img/header.jpg" class="d-block w-100" alt="./assets/img/header.jpg">
+                    <div class=" text-header ">
+                        <p class="text-capitalize text-center text-white">Generasi Pintar Digital</p>
+                        <h1 class="text-center text-bold text-white ">Lengkapi dirimu dengan keahlian digital melalui
+                            program kami
+                        </h1>
+                        <span
+                            class="d-flex mt-6 box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span
+                            class="d-flex box bounce-2 justify-content-center align-content-center align-items-center">
+                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.92 9.65567L13.4 16.6574C12.63 17.4843 11.37 17.4843 10.6 16.6574L4.08 9.65567"
+                                    stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- END: HEADER  -->
+
+    <!-- START CONTENT -->
+    <section class="container">
+        <div class="title-content">
+            <div class="text-content">
+                <p class="gradient-text">Workshop</p>
+                <h1>Mari Kita Tingkatkan Keahlian Sesuai Keinginan </h1>
+            </div>
+            <div class="scale">
+                <div class="btn btn-primary-merintis">
+                    <a href="" class="">All Workshop</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten.jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten (1).jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten (3).jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten.jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten (1).jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto;">
+                        <div
+                            style="background: url('./assets/img/konten (3).jpg'); background-position: center;
+                        background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="card-body position-relative">
+                            <div class="kategori">
+                                <p>HOME AND LIVING</p>
+                            </div>
+                            <h5 class="card-title">Learn How To Create Social Media Design</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="price">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.4805 15.6245C20.0084 16.0857 19.7387 16.7494 19.8065 17.4578C19.9082 18.6723 21.0219 19.5603 22.2364 19.5598L24.3731 19.5589L24.3736 20.8971C24.3746 23.225 22.4748 25.1263 20.1469 25.1272L7.23692 25.1324C4.90907 25.1333 3.00779 23.2336 3.00686 20.9057L3.00383 13.3374C3.0029 11.0095 4.90265 9.10825 7.23051 9.10732L20.1405 9.10215C22.4684 9.10122 24.3697 11.001 24.3706 13.3288L24.3712 14.9482L22.0996 14.9491C21.4699 14.9494 20.8964 15.197 20.4805 15.6245Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M3.00424 14.3495L3.00218 9.21027C3.00164 7.87204 3.8221 6.67962 5.07018 6.2068L13.9979 2.82953C15.3921 2.30043 16.8882 3.33446 16.8888 4.83014L16.8905 9.10348"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.5624 16.095L25.5634 18.4117C25.5636 19.0302 25.069 19.5364 24.4393 19.5592L22.2351 19.56C21.0206 19.5605 19.9069 18.6726 19.8052 17.4581C19.7375 16.7496 20.0071 16.086 20.4792 15.6248C20.8951 15.1973 21.4686 14.9496 22.0983 14.9494L24.4374 14.9485C25.0672 14.9707 25.5622 15.4765 25.5624 16.095Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8.06464 13.8864L15.9366 13.8833" stroke="#343434" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Rp 1.000.000</p>
+                                </div>
+                                <div class="date">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.51819 2.64191L9.51959 6.14066" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.8482 2.63812L18.8496 6.13688" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.27335 10.9127L24.0996 10.9048" stroke="#343434" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M24.6825 10.2165L24.6864 20.1296C24.6878 23.6284 22.9394 25.9616 18.8575 25.9632L9.52748 25.9669C5.4456 25.9686 3.69529 23.6368 3.69389 20.138L3.68993 10.2249C3.68853 6.72612 5.43697 4.39292 9.51885 4.39128L18.8489 4.38755C22.9307 4.38591 24.6811 6.71772 24.6825 10.2165Z"
+                                            stroke="#343434" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4976 16.2835L18.5081 16.2835" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.499 19.7822L18.5095 19.7822" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1834 16.2852L14.1938 16.2852" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14.1848 19.7839L14.1952 19.7839" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86687 16.2869L9.87735 16.2869" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.86827 19.7857L9.87875 19.7857" stroke="#343434" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>
+                                        17 Juli 2021
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div> <!--  end col  -->
+
+
+            </div>
+            <!-- end row -->
+            <div class="scale">
+                <div class="btn btn-primary-merintis">
+                    <a href="" class="">All Workshop</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END CONTENT -->
+
+    <!-- START CONTENT -->
+    <section class="container">
+        <div class="title-content">
+            <div class="text-content">
+                <p class="gradient-text">Artikel</p>
+                <h1>Ayo Baca Artikel Agar Wawasan Kalian Lebih Luas </h1>
+            </div>
+            <div class="scale">
+                <div class="btn btn-primary-merintis">
+                    <a href="" class="">All Artikel</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="artikel">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto; border-radius: 23px 23px 0 0;">
+                        <div
+                            style="background: url('./assets/img/konten (3).jpg'); background-position: center;
+                    background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="post">
+                            <span>POSTED ON 29 NOVEMBER 2019</span>
+                            <h1>Ingin Merintis Bisnis? Ini Cara Memulainya dari Nol!</h1>
+                            <p>Merintis bisnis dari nol memang bukanlah seperti membalikkan telapak tangan. Diperlukan
+                                niat
+                                yang kuat, kerja keras ...</p>
+                            <a href="" class="gradient-text stretched-link">Read More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto; border-radius: 23px 23px 0 0;">
+                        <div
+                            style="background: url('./assets/img/konten (1).jpg'); background-position: center;
+                    background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="post">
+                            <span>POSTED ON 29 NOVEMBER 2019</span>
+                            <h1>Ingin Merintis Bisnis? Ini Cara Memulainya dari Nol!</h1>
+                            <p>Merintis bisnis dari nol memang bukanlah seperti membalikkan telapak tangan. Diperlukan
+                                niat
+                                yang kuat, kerja keras ...</p>
+                            <a href="" class="gradient-text stretched-link">Read More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <div class="card position-relative" style="width: auto; border-radius: 23px 23px 0 0;">
+                        <div
+                            style="background: url('./assets/img/konten (2).jpg'); background-position: center;
+                    background-size: cover; background-repeat: no-repeat; width: auto; height: 265.17px;border-radius: 23px 23px 0 0;">
+                        </div>
+                        <div class="post">
+                            <span>POSTED ON 29 NOVEMBER 2019</span>
+                            <h1>Ingin Merintis Bisnis? Ini Cara Memulainya dari Nol!</h1>
+                            <p>Merintis bisnis dari nol memang bukanlah seperti membalikkan telapak tangan. Diperlukan
+                                niat
+                                yang kuat, kerja keras ...</p>
+                            <a href="" class="gradient-text stretched-link">Read More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="scale mx-auto">
+                <div class="btn btn-primary-merintis">
+                    <a href="" class="">All Workshop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTENT -->
+
+
+
+    <!-- start footer -->
+    <footer class="container">
+        <div class="row d-flex justify-content-center align-content-center align-items-center">
+            <div class="col-lg-4 col-md-12 col-sm-12" data-aos="fade-down" data-aos-delay="250">
+                <div class="logo-footer">
+                    <img src="./assets/img/logo.png" alt="" class="footer-logo" />
+                    <p>
+                        Mulai Merintis adalah Platform Marketplace edukasi kreatif yang menyediakan berbagai macam kelas
+                        untuk melatih pengembangan soft skill dengan para pengajar terbaik di bidangnya.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 menu-footer">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="350">
+                        <div class="menu-footer">
+                            <h1>Kelas Terpopuler</h1>
+                            <ul>
+                                <li><a href="">How to Make Organic Face Mask</a></li>
+                                <li><a href="">(Kelas Online) Make Over your CV for Interview Success</a></li>
+                                <li><a href="">Learn To Make Your Own Perfume</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="450">
+                        <div class="menu-footer">
+                            <h1>Bantuan & Informasi</h1>
+                            <ul>
+                                <li><a href="">Kebijakan Pengguna</a></li>
+                                <li><a href="">Hubungi Kami</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-down" data-aos-delay="550">
+                        <div class="menu-footer">
+                            <h1>Didukung Oleh</h1>
+                            <img src="./assets/img/hip.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 footer-show">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Kelas Terpopuler
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="">How to Make Organic Face Mask</a></li>
+                                    <li><a href="">(Kelas Online) Make Over your CV for Interview Success</a></li>
+                                    <li><a href="">Learn To Make Your Own Perfume</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Bantuan & Informasi
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="">Kebijakan Pengguna</a></li>
+                                    <li><a href="">Hubungi Kami</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Didukung Oleh
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <img src="./assets/img/hip.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer">
+        <p>All Rights Reserved by Mulai Merintis 2021</p>
+    </div>
+    <!-- end footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bootstraps js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
