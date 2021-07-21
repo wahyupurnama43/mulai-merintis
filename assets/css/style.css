@@ -438,6 +438,22 @@ margin:10px 0;
     color: #fff;
     font-weight: bold;
 }
+/* search */
+.search{
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 @media (max-width: 1000px){
     .header{
