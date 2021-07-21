@@ -11,9 +11,12 @@ $('li.dropdown > a').on('click', function (event) {
         $('html').click(function () {
             thisUI.children(".dropdown-menu").hide();
             $('html').unbind('click');
+            $("ul li.dropdown").removeClass("mt-dropdown");
         });
     });
-    dropdown.classList.toggle("mt-dropdown");
+    $("ul li.dropdown").addClass("mt-dropdown");
+
+
 });
 
 
