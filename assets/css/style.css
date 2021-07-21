@@ -424,6 +424,7 @@ footer .menu-footer ul li a {
 }
 .accordion-body ul li{
 list-style: none;
+margin:10px 0;
 }
 .accordion-body ul li a{
     color: var(--color);
