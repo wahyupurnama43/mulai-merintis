@@ -566,6 +566,11 @@ list-style: none;
         width: 16px;
     }
 }
+@media (max-width: 575px){
+    .py-sm-10{
+        padding: 0 1.2rem !important; 
+    }
+}
 @media (max-width: 540px){
     .logo-img img{
         margin-left: 10px !important;
