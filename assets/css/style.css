@@ -19,6 +19,9 @@ p {
     margin-bottom: 0 !important;
     padding: 0 !important;
 }
+a{
+    color: var(--color);
+}
 body {
     width: 100%;
     /* max-width: 1920px; */
@@ -213,6 +216,9 @@ ul.dropdown-menu {
     color: #fca404 !important;
 }
 .btn-primary-solid-merintis a{
+    color: #ffffff;
+}
+.btn-primary-solid-merintis a:hover{
     color: #ffffff;
 }
 .mobile-show,.footer-show{
@@ -453,10 +459,12 @@ margin:10px 0;
     padding-top: 30px;
     border-radius: 10px;
 }
-.search .form-control, .search .form-select{
-    border: 1px solid #fca404;
+.form-control,
+.form-select{
+    border: 1px solid #fca404 !important;
 }
-.search .form-control:focus, .search .form-select:focus{
+.form-control:focus,
+.form-select:focus{
     border: 1px solid #fca404;
     outline: none !important;
     box-shadow: none !important;
@@ -502,11 +510,78 @@ margin:10px 0;
 .header-tentang {
     margin-top: 8rem;
 }
+.login{
+    width: 50% !important;
+    margin: 0 auto;
+    margin-top:10rem;
+}
+.login h1{
+    font-weight: 500;
+    font-size: 31.4579px;
+    line-height: 39px;
+    text-transform: capitalize;
+    color: #343434;
+    text-align: center;
 
+}
+.login-with-sosmed{
+    text-align: center;
+    margin-top: 20px;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.or p{
+    margin: 0 20px;
+}
+.or span.hr{
+    content: ' ';
+    width: 28%;
+    height: 2px;
+    border-radius: 20px;
+    background: #9B9B9B;
+    
+}
+.form-menu{
+    margin: 0 auto;
+    margin-top: 20px ;
 
+}
+.form-menu form label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #343434;
+    padding: 10px 0;
 
-
-
+}
+.masuk {
+    margin-top: 20px !important;
+}
+.masuk button{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.masuk button:hover{
+    color: #ffffff;
+}
+.register-disini{
+    margin-top: 10px;
+}
+.register-disini a {
+    color: var(--color);
+}
+.register-disini a:hover{
+    color: var(--color);
+}
+.register-disini a span{
+    font-weight: 700;
+}
 
 
 
@@ -518,7 +593,12 @@ margin:10px 0;
         margin-top: -8rem;
     }
 }
-
+@media (max-width: 1199px){
+    .or span.hr{
+        width: 23%;
+        
+    }
+}
 @media (max-width: 1000px){
     .header{
         margin-top: 5rem;
@@ -528,6 +608,11 @@ margin:10px 0;
     }
 }
 @media (max-width: 991px){
+    
+    .login{
+        width: 70% !important;
+        margin-top: 8rem;
+    }
     .tentang{
         width: 90% !important;
     }
@@ -630,6 +715,18 @@ margin:10px 0;
     }
 }
 @media (max-width: 768px) {
+    .or span.hr{
+        width: 24%;
+
+        border-radius: 0 !important;
+        
+    }
+    .login{
+        width: 90% !important;
+    }
+    .visi-misi{
+        margin-top: 1rem;
+    }
     .mt-7{
         margin-top: 18rem;
     }
@@ -667,6 +764,9 @@ margin:10px 0;
     .text-header span svg{
         width: 16px;
     }
+    .card-visi h1{
+        font-size: 25px !important;
+    }
 }
 @media (max-width : 818px){
     .tentang {
@@ -674,6 +774,7 @@ margin:10px 0;
     }
 }
 @media (max-width: 575px){
+
     .text-header h1{
         font-size: 25px;
     }
@@ -686,6 +787,24 @@ margin:10px 0;
     }
 }
 @media (max-width: 540px){
+    .login h1{
+        font-size: 25px;
+    }
+    .form-menu .gradient-text{
+        font-size: 15px;
+    } 
+    .register-disini a{
+        font-size: 13px;
+    }
+    .masuk{
+        margin-top: 0 !important;
+    }
+    .or{
+        flex-direction: column;
+    }
+    .or span.hr{
+        display: none;
+    }
     .tentang p{
         font-size: 15px !important;
     }
@@ -700,6 +819,12 @@ margin:10px 0;
     }
 }
 @media (max-width: 500px){
+    .card-visi h1{
+        font-size: 23px !important;
+    }
+    .card-visi p{
+        font-size: 15px !important;
+    }
     .header-tentang{
         margin-top: 7rem;
     }
