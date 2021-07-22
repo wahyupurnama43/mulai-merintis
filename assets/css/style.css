@@ -21,7 +21,7 @@ p {
 }
 body {
     width: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
 }
 .scale{
@@ -239,7 +239,7 @@ ul.dropdown-menu {
     padding: 0 5px;
 }
 /* header */
-.header .box{
+.box{
     animation-duration: 1.5s;
         animation-iteration-count: infinite;
 
@@ -254,7 +254,6 @@ ul.dropdown-menu {
     100% { transform: translateY(0); }
 }
 .text-header{
-    margin-top: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -404,6 +403,7 @@ footer .menu-footer ul li a {
     font-size: 13px;
 }
 .footer {
+    margin: 0 !important;
     text-align: center;
 }
 .footer hr {
@@ -441,9 +441,67 @@ margin:10px 0;
 /* search */
 .search{
     background: #fff;
+    height: auto;
+    width: 70%;
+    box-shadow: 0px 5.36691px 10.7338px -5.36691px rgba(24, 39, 75, 0.12), 0px 7.15588px 21.4676px -3.57794px rgba(24, 39, 75, 0.08);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    padding:  1rem 30px ;
+    padding-top: 30px;
+    border-radius: 10px;
 }
-
-
+.search .form-control, .search .form-select{
+    border: 1px solid #fca404;
+}
+.search .form-control:focus, .search .form-select:focus{
+    border: 1px solid #fca404;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.mt-7{
+    margin-top: 7rem;
+}
+/* visi-misi */
+.visi-misi{
+    width: 60% !important;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.card-visi{
+    background: #ffffff;
+    height: 100%;
+    box-shadow: 0px 5.36691px 10.7338px -5.36691px rgb(24 39 75 / 12%), 0px 7.15588px 21.4676px -3.57794px rgb(24 39 75 / 8%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px !important;
+}
+.visi-misi .col-lg-6:nth-child(2) .card-visi p{
+    text-align: justify !important;
+}
+.card-visi h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.tentang{
+    background: #fff;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -10rem;
+    box-shadow: 0px 5.36691px 10.7338px -5.36691px rgba(24, 39, 75, 0.12), 0px 7.15588px 21.4676px -3.57794px rgba(24, 39, 75, 0.08);
+    z-index: 50;
+    padding:  1rem 30px ;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.header-tentang {
+    margin-top: 8rem;
+}
 
 
 
@@ -455,12 +513,30 @@ margin:10px 0;
 
 
 /* responsive */
+@media (max-width: 1136px){
+    .tentang{
+        margin-top: -8rem;
+    }
+}
+
 @media (max-width: 1000px){
     .header{
         margin-top: 5rem;
     }
+    .tentang{
+        margin-top: -6rem;
+    }
 }
 @media (max-width: 991px){
+    .tentang{
+        width: 90% !important;
+    }
+    .mt-7{
+        margin-top: 12rem;
+    }
+    .search{
+        margin-top: 4rem;
+    }
     footer{
         text-align: center;
     }
@@ -473,6 +549,9 @@ margin:10px 0;
     }
 }
 @media (max-width: 900px){
+    .visi-misi{
+        width: 90% !important;
+    }
     .menu {
         position: fixed;
         width: 100vw;
@@ -551,6 +630,12 @@ margin:10px 0;
     }
 }
 @media (max-width: 768px) {
+    .mt-7{
+        margin-top: 18rem;
+    }
+    .search{
+        margin-top: 7rem;
+    }
     .header{
         margin-top: 6.5rem;
     }
@@ -577,18 +662,33 @@ margin:10px 0;
         margin-bottom: 10px !important;
     }
     .text-header h1{
-        font-size: 20px;
+        font-size: 35px;
     }
     .text-header span svg{
         width: 16px;
     }
 }
+@media (max-width : 818px){
+    .tentang {
+        margin-top: -3rem;
+    }
+}
 @media (max-width: 575px){
+    .text-header h1{
+        font-size: 25px;
+    }
+    .tentang{
+        margin-top: 2rem !important;
+    }
+    
     .py-sm-10{
         padding: 0 1.2rem !important; 
     }
 }
 @media (max-width: 540px){
+    .tentang p{
+        font-size: 15px !important;
+    }
     .logo-img img{
         margin-left: 10px !important;
     }
@@ -600,6 +700,16 @@ margin:10px 0;
     }
 }
 @media (max-width: 500px){
+    .header-tentang{
+        margin-top: 7rem;
+    }
+    .mt-7{
+        margin-top: 19rem;
+    }
+    .search{
+        width: 90%;
+        margin-top: 8rem;
+    }
     .content{
         margin-top: 1rem;
     }
@@ -641,11 +751,11 @@ margin:10px 0;
         width: 70% !important;
     }
     .text-header p{
-        font-size: 9px;
+        font-size: 15px;
         margin-bottom: 7px !important;
     }
     .text-header h1{
-        font-size: 13px;
+        font-size: 25px;
     }
     .header{
         margin-top: 6.5rem;
