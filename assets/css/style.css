@@ -599,6 +599,9 @@ select:focus{
 .perempuan{
     margin-left: 50px;
 }
+.form-check-input{
+    background: transparent !important;
+}
 .form-check-input:checked {
     background-color: #fca404 !important;
     border-color: #fca404 !important;
