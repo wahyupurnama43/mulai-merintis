@@ -460,11 +460,16 @@ margin:10px 0;
     border-radius: 10px;
 }
 .form-control,
-.form-select{
+.form-select,
+select{
     border: 1px solid #fca404 !important;
 }
+.register-select select{
+    padding: 5px 12px;
+}
 .form-control:focus,
-.form-select:focus{
+.form-select:focus,
+select:focus{
     border: 1px solid #fca404;
     outline: none !important;
     box-shadow: none !important;
@@ -582,10 +587,26 @@ margin:10px 0;
 .register-disini a span{
     font-weight: 700;
 }
+/* register */
+.form-check{
+    display: flex !important;
+}
 
-
-
-
+.form-check-input{
+    border-radius: 50% !important;
+    margin-right: 10px;
+}
+.perempuan{
+    margin-left: 50px;
+}
+.form-check-input:checked {
+    background-color: #fca404 !important;
+    border-color: #fca404 !important;
+}
+.form-check-input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 /* responsive */
 @media (max-width: 1136px){
@@ -776,7 +797,7 @@ margin:10px 0;
 @media (max-width: 575px){
 
     .text-header h1{
-        font-size: 25px;
+        font-size: 15px !important;
     }
     .tentang{
         margin-top: 2rem !important;
@@ -876,7 +897,7 @@ margin:10px 0;
         width: 70% !important;
     }
     .text-header p{
-        font-size: 15px;
+        font-size: 10px;
         margin-bottom: 7px !important;
     }
     .text-header h1{
