@@ -718,6 +718,22 @@ tbody, tfoot, th, thead, tr{
     left: 0 !important;
     transform: translate(-50%, -50%) !important;
 }
+.post-entry{
+    margin-top: 7rem;
+}
+.post-entry h1{
+    color: #ffffff !important;
+}
+.header-artikel{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* responsive */
 @media (max-width: 1136px){
@@ -1005,6 +1021,7 @@ tbody, tfoot, th, thead, tr{
     }
 }
 @media (max-width: 500px){
+    
     .title-details h1{
         font-size: 23px;
     }
